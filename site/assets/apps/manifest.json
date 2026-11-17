@@ -1,0 +1,263 @@
+{
+  "zhongrenbang": {
+    "name": "众人帮",
+    "matched_name": "众人帮",
+    "match": "exact",
+    "pkg": "com.jianzhiku.zhongrenbang",
+    "app_id": "11879223",
+    "developer": "北京酷酷信息服务有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/zhongrenbang/icon.png",
+    "shots": [
+      "assets/apps/zhongrenbang/shot1.png",
+      "assets/apps/zhongrenbang/shot2.png",
+      "assets/apps/zhongrenbang/shot3.png"
+    ]
+  },
+  "shangbangzhuan": {
+    "name": "赏帮赚",
+    "matched_name": "赏帮赚",
+    "match": "exact",
+    "pkg": "com.sbzapp.sbzapp",
+    "app_id": "54220991",
+    "developer": "福州酷鱼网络科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/shangbangzhuan/icon.png",
+    "shots": [
+      "assets/apps/shangbangzhuan/shot1.png",
+      "assets/apps/shangbangzhuan/shot2.png",
+      "assets/apps/shangbangzhuan/shot3.png"
+    ]
+  },
+  "miaodan": {
+    "name": "秒单",
+    "matched_name": "秒单词",
+    "match": "fuzzy",
+    "pkg": "com.app.miaodanci",
+    "app_id": "54536583",
+    "developer": "杭州洋讯软件科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/miaodan/icon.png",
+    "shots": [
+      "assets/apps/miaodan/shot1.jpg",
+      "assets/apps/miaodan/shot2.jpg",
+      "assets/apps/miaodan/shot3.jpg"
+    ]
+  },
+  "quxianzhuan": {
+    "name": "趣闲赚",
+    "match": "none"
+  },
+  "lezhuke": {
+    "name": "乐助客",
+    "matched_name": "乐助客",
+    "match": "exact",
+    "pkg": "com.lzk.app",
+    "app_id": "54637267",
+    "developer": "南安市微畅信息技术有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/lezhuke/icon.png",
+    "shots": [
+      "assets/apps/lezhuke/shot1.png",
+      "assets/apps/lezhuke/shot2.png",
+      "assets/apps/lezhuke/shot3.png"
+    ]
+  },
+  "duoquzhuan": {
+    "name": "多趣赚",
+    "matched_name": "多趣赚",
+    "match": "exact",
+    "pkg": "com.cd_moment.preferred_comment",
+    "app_id": "54436746",
+    "developer": "成都启辰瑾一科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/duoquzhuan/icon.png",
+    "shots": [
+      "assets/apps/duoquzhuan/shot1.png",
+      "assets/apps/duoquzhuan/shot2.png",
+      "assets/apps/duoquzhuan/shot3.png"
+    ]
+  },
+  "meitianzhuandian": {
+    "name": "每天赚点",
+    "matched_name": "每天赚点兼职",
+    "match": "fuzzy",
+    "pkg": "com.zero.daily.pay.job",
+    "app_id": "54515884",
+    "developer": "石家庄零时找信息科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/meitianzhuandian/icon.png",
+    "shots": [
+      "assets/apps/meitianzhuandian/shot1.jpg",
+      "assets/apps/meitianzhuandian/shot2.jpg",
+      "assets/apps/meitianzhuandian/shot3.jpg"
+    ]
+  },
+  "xuanshangwa": {
+    "name": "悬赏蛙",
+    "match": "none"
+  },
+  "xiongmaozhuan": {
+    "name": "熊猫赚",
+    "match": "none"
+  },
+  "xinaibang": {
+    "name": "喜爱帮",
+    "match": "none"
+  },
+  "xiaobai-zhuanqian": {
+    "name": "小白赚钱",
+    "matched_name": "小白赚钱兼职",
+    "match": "fuzzy",
+    "pkg": "com.sinomenium.acutum",
+    "app_id": "54373488",
+    "developer": "四川谷丰旺成网络科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/xiaobai-zhuanqian/icon.png",
+    "shots": [
+      "assets/apps/xiaobai-zhuanqian/shot1.jpg",
+      "assets/apps/xiaobai-zhuanqian/shot2.jpg",
+      "assets/apps/xiaobai-zhuanqian/shot3.jpg"
+    ]
+  },
+  "miduo": {
+    "name": "米多",
+    "matched_name": "米多赚钱(极速版)",
+    "match": "fuzzy",
+    "pkg": "com.sakura.mzlite",
+    "app_id": "54046666",
+    "developer": "深圳市海岸千里创新科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/miduo/icon.png",
+    "shots": [
+      "assets/apps/miduo/shot1.png",
+      "assets/apps/miduo/shot2.png",
+      "assets/apps/miduo/shot3.png"
+    ]
+  },
+  "mengdan": {
+    "name": "梦单",
+    "match": "none"
+  },
+  "zhuanqianle": {
+    "name": "赚钱了",
+    "match": "none"
+  },
+  "shouyouzhuan": {
+    "name": "手游赚",
+    "match": "none"
+  },
+  "imoney": {
+    "name": "iMoney爱盈利",
+    "matched_name": "iMoney",
+    "match": "fuzzy",
+    "pkg": "com.clover.imoney",
+    "app_id": "42354350",
+    "developer": "每日科技（上海）股份有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/imoney/icon.png",
+    "shots": [
+      "assets/apps/imoney/shot1.png",
+      "assets/apps/imoney/shot2.png",
+      "assets/apps/imoney/shot3.png"
+    ]
+  },
+  "niubang": {
+    "name": "牛帮",
+    "match": "none"
+  },
+  "u-067": {
+    "name": "多趣宝盒",
+    "matched_name": "宝盒",
+    "match": "fuzzy",
+    "pkg": "com.ygbhueao.anehb",
+    "app_id": "54529011",
+    "developer": "深圳市世纪锦盛科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/u-067/icon.png",
+    "shots": [
+      "assets/apps/u-067/shot1.png",
+      "assets/apps/u-067/shot2.png",
+      "assets/apps/u-067/shot3.png"
+    ]
+  },
+  "u-068": {
+    "name": "小羊趣帮",
+    "matched_name": "小羊趣帮",
+    "match": "exact",
+    "pkg": "com.tjtj.funhelper",
+    "app_id": "54480795",
+    "developer": "天津市天境畅想科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/u-068/icon.png",
+    "shots": [
+      "assets/apps/u-068/shot1.png",
+      "assets/apps/u-068/shot2.png",
+      "assets/apps/u-068/shot3.png"
+    ]
+  },
+  "u-069": {
+    "name": "柚子快报",
+    "matched_name": "柚子快报",
+    "match": "exact",
+    "pkg": "com.youzikuaibao.tianji",
+    "app_id": "53922543",
+    "developer": "义乌市天玑电子商务有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/u-069/icon.png",
+    "shots": [
+      "assets/apps/u-069/shot1.png",
+      "assets/apps/u-069/shot2.png",
+      "assets/apps/u-069/shot3.png"
+    ]
+  },
+  "u-070": {
+    "name": "大玩家",
+    "matched_name": "足球大玩家",
+    "match": "fuzzy",
+    "pkg": "com.tencent.tmgp.zqdwj",
+    "app_id": "54369481",
+    "developer": "宿州手游互联信息技术有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/u-070/icon.png",
+    "shots": [
+      "assets/apps/u-070/shot1.jpg",
+      "assets/apps/u-070/shot2.jpg",
+      "assets/apps/u-070/shot3.jpg"
+    ]
+  },
+  "u-071": {
+    "name": "靠谱试玩",
+    "matched_name": "靠谱",
+    "match": "fuzzy",
+    "pkg": "cn.xslm.app",
+    "app_id": "54292295",
+    "developer": "族盟股份有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/u-071/icon.png",
+    "shots": [
+      "assets/apps/u-071/shot1.jpg",
+      "assets/apps/u-071/shot2.jpg",
+      "assets/apps/u-071/shot3.jpg"
+    ]
+  },
+  "u-072": {
+    "name": "彩贝乐园",
+    "match": "none"
+  },
+  "u-073": {
+    "name": "爪游宝",
+    "matched_name": "爪游宝",
+    "match": "exact",
+    "pkg": "com.zhuayoubao.box",
+    "app_id": "54246007",
+    "developer": "杭州红彤彤网络科技有限公司",
+    "official_intro": "åºç¨å®(Android)æ¯è¾è®¯åºç¨ä¸­å¿å¾åæé çææºåºç¨ååºï¼è´åäºä¸ºç¨æ·æä¾ä¸°å¯ãä¼è´¨ãå®å¨ãä¸ªæ§åçå®åè½¯ä»¶æ¸¸æèµæºåä¸ç«å¼çä¸è½½ç®¡çä½éªï¼å¨æ¹ä½è¦çç¨æ·çä¸è½½ãç®¡çãæ¶èãåäº«ãç¤¾äº¤å¨±ä¹ç­å¤æ ·åéæ±ã",
+    "icon": "assets/apps/u-073/icon.png",
+    "shots": [
+      "assets/apps/u-073/shot1.png",
+      "assets/apps/u-073/shot2.png",
+      "assets/apps/u-073/shot3.png"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+# 旧分类体系统一到 /tools/（SEO 友好的 301 重定向）
+/categories   /tools   301
+/categories/   /tools/   301
+/categories/:slug   /tools/:slug   301
+/categories/:slug/   /tools/:slug/   301
+
+# 旧设备平台页（已移除）回退到排行榜
+/platforms   /ranking   301
+/platforms/*   /ranking   301

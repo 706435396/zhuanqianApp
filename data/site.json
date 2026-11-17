@@ -1,0 +1,40 @@
+{
+  "name": "赚钱App大全",
+  "name_en": "Money Apps Hub",
+  "tagline": "手机就能赚钱 · 每款App都亲测提现",
+  "description": "专注手机赚钱软件测评：任务赚钱、问卷调查、看视频、看小说、游戏试玩、手机接单。每款App都讲清下载、注册、提现门槛与真实收益，只推能提现的。",
+  "domain": "https://example.com",
+  "lang": "zh-CN",
+  "author": "赚钱App大全编辑部",
+  "email": "hello@example.com",
+  "icp": "",
+  "analytics_id": "",
+  "nav": [
+    { "label": "首页", "url": "/" },
+    { "label": "赚钱App", "url": "/tools/" },
+    { "label": "🏆排行榜", "url": "/ranking/" },
+    { "label": "关于我们", "url": "/about/" }
+  ],
+  "hero": {
+    "badge": "每日更新 · 只推能提现的赚钱App",
+    "title": "用手机就能赚\n零花钱的App",
+    "subtitle": "刷视频、做任务、填问卷、看小说、玩游戏……我们把每款赚钱App的提现门槛、真实收益和避坑点拆开讲清楚，全部免费。",
+    "primary_cta": "浏览赚钱App",
+    "primary_url": "/tools/",
+    "secondary_cta": "看最新测评",
+    "secondary_url": "/#latest"
+  },
+  "stats": [
+    { "value": "150+", "label": "赚钱App亲测" },
+    { "value": "80+", "label": "提现成功案例" },
+    { "value": "30万+", "label": "读者累计阅读" },
+    { "value": "每日", "label": "更新App测评" }
+  ],
+  "newsletter": {
+    "title": "每周一封，只发能提现的新App情报",
+    "subtitle": "新App红利、提现攻略、真实收益复盘。不灌水，随时可退订。",
+    "button": "免费订阅",
+    "placeholder": "输入你的邮箱",
+    "note": "已有 12,000+ 人订阅"
+  }
+}

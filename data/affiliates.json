@@ -1,0 +1,818 @@
+[
+  {
+    "id": "zhongrenbang",
+    "name": "众人帮",
+    "category": "renwu",
+    "type": "任务赚钱",
+    "rating": 4.4,
+    "tag": "任务多",
+    "commission": "新用户任务加成",
+    "pros": [
+      "任务种类多",
+      "单价透明",
+      "满额可提现"
+    ],
+    "url": "http://zj.zrb0.com/earn-30000615",
+    "emoji": "📋",
+    "color": "#2563eb",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "shangbangzhuan",
+    "name": "赏帮赚",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.6,
+    "tag": "热门",
+    "commission": "1元提现·任务多",
+    "pros": [
+      "1元起提",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://vqcce.cckdoubchongq66hbyj.cn/?code=7767046",
+    "emoji": "📋",
+    "color": "#2563eb",
+    "featured": true,
+    "featured_reason": "New手友好，任务量大",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "miaodan",
+    "name": "秒单",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.5,
+    "tag": "提现快",
+    "commission": "小额短单·秒到",
+    "pros": [
+      "1元起提秒到",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "http://www.uxtt.cn/registerUser.html?Promocode=3598760&channel=miaodan",
+    "emoji": "⚡",
+    "color": "#0ea5e9",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "秒到",
+      "days": 0.5
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "quxianzhuan",
+    "name": "趣闲赚",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.6,
+    "tag": "老牌",
+    "commission": "8年老平台",
+    "pros": [
+      "1元起提",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://qgri.026o.cn/odzwb",
+    "emoji": "🐢",
+    "color": "#16a34a",
+    "featured": true,
+    "featured_reason": "运营多年，口碑较稳",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "lezhuke",
+    "name": "乐助客",
+    "category": "renwu",
+    "type": "综合任务",
+    "rating": 4.4,
+    "tag": "任务全",
+    "commission": "问卷+试玩+下载",
+    "pros": [
+      "满1元提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://app.qbkj.cc/#/pages/download/download?invitecode=UHJveVZRZ3RxaEU3cTFWZ0N3WXd4dz09&ext=0",
+    "emoji": "🤝",
+    "color": "#7c3aed",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "duoquzhuan",
+    "name": "多趣赚",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.3,
+    "tag": "积分分红",
+    "commission": "任务赚积分分红",
+    "pros": [
+      "满额提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "http://dqzdownload2.weibangzhuan1.com/54357894",
+    "emoji": "🎯",
+    "color": "#ea580c",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "1-3天",
+      "days": 3
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "meitianzhuandian",
+    "name": "每天赚点",
+    "category": "renwu",
+    "type": "综合任务",
+    "rating": 4.3,
+    "tag": "任务多",
+    "commission": "图田科技出品",
+    "pros": [
+      "满额提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "http://ministhree.szgcfw.com/yqhy_ldy_20251103/?code=19335517&flag=1",
+    "emoji": "📅",
+    "color": "#ca8a04",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "1-3天",
+      "days": 3
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "xuanshangwa",
+    "name": "悬赏蛙",
+    "category": "renwu",
+    "type": "综合任务",
+    "rating": 4.4,
+    "tag": "亲测",
+    "commission": "任务种类丰富",
+    "pros": [
+      "满额提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://1.xuanshangwa.net/tg/link/0/5321806",
+    "emoji": "🐸",
+    "color": "#65a30d",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "1-3天",
+      "days": 3
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "xiongmaozhuan",
+    "name": "熊猫赚",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.3,
+    "tag": "亲测",
+    "commission": "邀请奖励机制",
+    "pros": [
+      "不限次数提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "http://www.ooju.cn/panda.html?Promocode=3598746&channel=xiongmao",
+    "emoji": "🐼",
+    "color": "#334155",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "秒到",
+      "days": 0.5
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "xinaibang",
+    "name": "喜爱帮",
+    "category": "renwu",
+    "type": "轻量任务",
+    "rating": 4.2,
+    "tag": "新手友好",
+    "commission": "操作简单",
+    "pros": [
+      "低门槛提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://m.xiaicn.cn/invite/1273063",
+    "emoji": "❤️",
+    "color": "#e11d48",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "xiaobai-zhuanqian",
+    "name": "小白赚钱",
+    "category": "renwu",
+    "type": "新手任务",
+    "rating": 4.2,
+    "tag": "纯新手",
+    "commission": "界面简单",
+    "pros": [
+      "满额提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://eee.xbzqapp.com/m.html?recode=0Cn4KQB5",
+    "emoji": "🌱",
+    "color": "#84cc16",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "1-3天",
+      "days": 3
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "miduo",
+    "name": "米多",
+    "category": "renwu",
+    "type": "新手任务",
+    "rating": 4.2,
+    "tag": "亲测",
+    "commission": "低门槛试水",
+    "pros": [
+      "满额提现",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "http://catyoo.hongmiz.com/index.php/index/index/zhuce?appname=com.sakura.mizhuan&invite=9M5TTF",
+    "emoji": "🌾",
+    "color": "#d97706",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "mengdan",
+    "name": "梦单",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.4,
+    "tag": "提现快",
+    "commission": "1元秒提",
+    "pros": [
+      "1元起提秒到",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "http://mengd.woaizhuanqian7.cn/mengdan.html?Promocode=3598747&channel=mengdan",
+    "emoji": "💭",
+    "color": "#6366f1",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "秒到",
+      "days": 0.5
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "zhuanqianle",
+    "name": "赚钱了",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.4,
+    "tag": "提现快",
+    "commission": "1元秒提",
+    "pros": [
+      "1元起提秒到",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://7dy9.tshenglai.cn/hyrsxw",
+    "emoji": "💵",
+    "color": "#16a34a",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "秒到",
+      "days": 0.5
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈",
+      "上班族"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "shouyouzhuan",
+    "name": "手游赚",
+    "category": "youxi",
+    "type": "游戏试玩",
+    "rating": 4.4,
+    "tag": "老牌",
+    "commission": "老牌试玩平台",
+    "pros": [
+      "成熟提现机制",
+      "任务说明清晰",
+      "手机就能做"
+    ],
+    "url": "https://syz-h5.dysdk.com/sharepage.html?invite_code=27D9C258",
+    "emoji": "📱",
+    "color": "#0f766e",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "imoney",
+    "name": "iMoney爱盈利",
+    "category": "youxi",
+    "type": "iOS应用试玩",
+    "rating": 4.4,
+    "tag": "iOS热门",
+    "commission": "新人送1元·满10提现",
+    "pros": [
+      "满10元提现",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "https://xxlinghua.com/ilanding/share?promote=1763325",
+    "emoji": "💰",
+    "color": "#2563eb",
+    "featured": true,
+    "featured_reason": "任务多，下午4点更新",
+    "withdraw": {
+      "label": "1-3天",
+      "days": 3
+    },
+    "price": {
+      "label": "高",
+      "level": 3
+    },
+    "audience": [
+      "学生",
+      "宝妈"
+    ],
+    "platform": "ios",
+    "stopped": false
+  },
+  {
+    "id": "niubang",
+    "name": "牛帮",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.3,
+    "tag": "秒结算",
+    "commission": "手游试玩·秒结算",
+    "pros": [
+      "佣金秒到账",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "http://task.bullhelp.com/?4015331",
+    "emoji": "🐂",
+    "color": "#ea580c",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "秒到",
+      "days": 0.5
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "学生",
+      "宝妈"
+    ],
+    "platform": "android",
+    "stopped": false
+  },
+  {
+    "id": "u-067",
+    "name": "多趣宝盒",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.3,
+    "tag": "邀请码",
+    "commission": "邀请链接注册",
+    "pros": [
+      "邀请码注册",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "https://dqbaohe.com/dqbh/shell/invite/page?appKey=1001&invite=aUB%2FPm4dCgSFJxLnbdXmtg%3D%3D",
+    "emoji": "📋",
+    "color": "#2563eb",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈"
+    ],
+    "platform": "both",
+    "stopped": false
+  },
+  {
+    "id": "u-068",
+    "name": "小羊趣帮",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.3,
+    "tag": "邀请码",
+    "commission": "邀请链接注册",
+    "pros": [
+      "邀请码注册",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "http://catyoo.hongmiz.com/index.php/index/index/zhuce?appname=com.tjtj.funhelper&invite=9M5TTF",
+    "emoji": "📋",
+    "color": "#2563eb",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈"
+    ],
+    "platform": "both",
+    "stopped": false
+  },
+  {
+    "id": "u-069",
+    "name": "柚子快报",
+    "category": "renwu",
+    "type": "悬赏任务",
+    "rating": 4.3,
+    "tag": "邀请码",
+    "commission": "邀请链接注册",
+    "pros": [
+      "邀请码注册",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "http://d.ayuq.cc/EMJIH1R",
+    "emoji": "📋",
+    "color": "#2563eb",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈"
+    ],
+    "platform": "both",
+    "stopped": false
+  },
+  {
+    "id": "u-070",
+    "name": "大玩家",
+    "category": "youxi",
+    "type": "游戏试玩",
+    "rating": 4.3,
+    "tag": "邀请码",
+    "commission": "邀请链接注册",
+    "pros": [
+      "邀请码注册",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "https://down.dawanj.com/?inviteCode=1189723",
+    "emoji": "🎮",
+    "color": "#0f766e",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈"
+    ],
+    "platform": "both",
+    "stopped": false
+  },
+  {
+    "id": "u-071",
+    "name": "靠谱试玩",
+    "category": "youxi",
+    "type": "游戏试玩",
+    "rating": 4.3,
+    "tag": "邀请码",
+    "commission": "邀请链接注册",
+    "pros": [
+      "邀请码注册",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "https://s1.haoshiwan.com/share/179491508325299787/eyJ1aWQiOiIyNTI5OTc4NyJ9.eyJjaGFubmVsIjoiaW9zIiwiY2hsX3R5cGUiOiJzaGFyZSJ9?plat_flag=0&share_type=WeChat",
+    "emoji": "🎮",
+    "color": "#0f766e",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈"
+    ],
+    "platform": "both",
+    "stopped": false
+  },
+  {
+    "id": "u-072",
+    "name": "彩贝乐园",
+    "category": "youxi",
+    "type": "游戏试玩",
+    "rating": 4.3,
+    "tag": "邀请码",
+    "commission": "邀请链接注册",
+    "pros": [
+      "邀请码注册",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "https://cblyh5.ippyu.com/cwite.html?code=SZKSQV",
+    "emoji": "🎮",
+    "color": "#0f766e",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈"
+    ],
+    "platform": "both",
+    "stopped": false
+  },
+  {
+    "id": "u-073",
+    "name": "爪游宝",
+    "category": "youxi",
+    "type": "游戏试玩",
+    "rating": 4.3,
+    "tag": "邀请码",
+    "commission": "邀请链接注册",
+    "pros": [
+      "邀请码注册",
+      "手机就能做",
+      "任务说明清晰"
+    ],
+    "url": "http://n6s0u.youfanli.com/landing_page?package_name=com.zhuayoubao.box&invite_id=12875584&p_id=2",
+    "emoji": "🎮",
+    "color": "#0f766e",
+    "featured": false,
+    "featured_reason": "",
+    "withdraw": {
+      "label": "当天",
+      "days": 1
+    },
+    "price": {
+      "label": "中",
+      "level": 2
+    },
+    "audience": [
+      "新手",
+      "学生",
+      "宝妈"
+    ],
+    "platform": "both",
+    "stopped": false
+  }
+]

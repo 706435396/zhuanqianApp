@@ -1,0 +1,84 @@
+name: 每日自动更新副业博客
+
+on:
+  # 每天北京时间 08:00 (UTC 00:00) 自动跑
+  schedule:
+    - cron: '0 0 * * *'
+  # 允许手动触发
+  workflow_dispatch:
+    inputs:
+      count:
+        description: '本次生成文章数量'
+        required: false
+        default: '1'
+
+# 防止并发运行
+concurrency:
+  group: daily-blog
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 确定本次生成数量
+        id: cfg
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "count=${{ github.event.inputs.count }}" >> $GITHUB_OUTPUT
+          else
+            echo "count=1" >> $GITHUB_OUTPUT
+          fi
+
+      - name: AI 批量生成文章（智谱 GLM）
+        env:
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          ZHIPU_MODEL: ${{ vars.ZHIPU_MODEL || 'glm-4-flash' }}
+        run: python scripts/generate_articles.py --count ${{ steps.cfg.outputs.count }}
+
+      - name: 构建静态站点
+        run: python scripts/build.py
+
+      - name: 提交变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "无变更，跳过提交"
+            echo "changed=false" >> $GITHUB_ENV
+          else
+            git commit -m "auto: 每日更新 $(date +'%Y-%m-%d')"
+            git push
+            echo "changed=true" >> $GITHUB_ENV
+          fi
+
+      # CF Pages 若通过 GitHub 集成部署，上方 push 会自动触发构建。
+      # 若用独立部署钩子，取消下方注释并配置 secrets.CF_DEPLOY_HOOK。
+      # - name: 触发 Cloudflare Pages 部署
+      #   if: env.changed == 'true'
+      #   run: curl -sS -X POST "${{ secrets.CF_DEPLOY_HOOK }}"
+
+      - name: 推送 sitemap 给搜索引擎
+        if: env.changed == 'true'
+        run: |
+          SITE="${{ vars.SITE_DOMAIN }}"
+          if [ -z "$SITE" ]; then
+            echo "未配置 SITE_DOMAIN，跳过 ping"
+            exit 0
+          fi
+          URL="https://${SITE}/sitemap.xml"
+          echo "pinging $URL"
+          curl -sS "https://www.google.com/ping?sitemap=${URL}" || true
+          curl -sS "https://www.bing.com/ping?sitemap=${URL}" || true
