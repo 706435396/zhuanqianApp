@@ -20,10 +20,15 @@
 │   ├── categories.json        # 分类
 │   ├── affiliates.json        # 联盟项目/工具（变现核心）
 │   ├── articles.json          # 文章（AI 生成后追加到这里）
-│   └── topics.json            # AI 选题队列（done=false 表示待写）
+│   ├── topics.json            # AI 选题队列（done=false 表示待写）
+│   └── wechat_state.json      # 微信草稿同步状态（自动生成，去重防重复推送）
 ├── scripts/
 │   ├── build.py               # 静态站生成器（零依赖）
-│   └── generate_articles.py   # 智谱 AI 批量写稿（零依赖）
+│   ├── generate_articles.py   # 智谱 AI 批量写稿（零依赖）
+│   └── wechat_draft.py        # 微信公众号草稿箱同步（需 requests + pillow）
+├── config/
+│   ├── wechat.example.json    # 微信配置模板（复制为 wechat.json 后填凭证）
+│   └── wechat.json            # 你的真实凭证（gitignore 排除，不推送）
 ├── .github/workflows/daily.yml# 每日自动更新流水线
 ├── site/                      # 构建产物 = CF Pages 部署根目录
 │   ├── index.html             # 首页
@@ -117,6 +122,54 @@ npx wrangler pages deploy site --project-name=money-apps-hub
 | `CF_DEPLOY_HOOK` | Secret（可选） | 若不用 GitHub 集成部署，填 CF Deploy Hook URL |
 
 配置好后可先在 Actions 页面手动 **Run workflow** 验证一次。
+
+## 微信公众号每日推送（草稿箱半自动）
+
+把网站文章同步到公众号草稿箱，最后一步「群发」在公众号后台人工点——既符合微信合规要求，个人订阅号也能用。
+
+### 能力边界（先看这个，少走弯路）
+
+| 能力 | 个人未认证订阅号 |
+|---|---|
+| 获取 token / 上传图片素材 / 草稿箱增删查 | ✅ 可用 |
+| API 自动发布（freepublish）/ 群发 | ❌ 2025-07 起回收，个人主体无法调用 |
+
+所以脚本**只做到「进草稿箱」**，发布必须人工点。这也符合微信《运营规范》2026 版「不得用脚本全自动替代真人发布」的要求。订阅号每天可群发 1 次（每次最多 8 篇），正好匹配每日推送。
+
+### 首次配置
+
+1. 安装依赖：`pip install requests pillow`
+2. 复制 `config/wechat.example.json` 为 `config/wechat.json`，填入：
+   - `appid` / `appsecret`：微信公众平台 → 设置与开发 → 基本配置 获取
+   - `source_url`：站点域名（默认读 site.json，应为 `https://money.72tool.com`）
+3. **配置 IP 白名单**（最易踩坑）：公众号后台 → 设置与开发 → 基本配置 → IP 白名单，把运行脚本的公网 IP 加进去。家宽 IP 会变，变动后需重新添加；报错 `40164` 就是这个问题。
+   - 想彻底省事：把脚本部署在有固定公网 IP 的小服务器上跑。
+
+> 密钥也可用环境变量 `WECHAT_APPID` / `WECHAT_APPSECRET` 提供（优先级更高），不落盘更安全。`config/wechat.json` 已被 `.gitignore` 排除。
+
+### 常用命令
+
+```bash
+# 预览某篇生成的 HTML（不调接口，先看排版对不对）
+python scripts/wechat_draft.py --dry-run --slug app-zhongrenbang
+# 会写出 _wechat_preview.html，用浏览器打开检查
+
+# 同步最新 1 篇未推送文章到草稿箱（日常用这个）
+python scripts/wechat_draft.py --latest 1
+
+# 同步指定文章 / 查看已同步列表 / 清除某篇同步标记
+python scripts/wechat_draft.py --slug app-zhongrenbang
+python scripts/wechat_draft.py --status
+python scripts/wechat_draft.py --reset app-zhongrenbang
+```
+
+脚本会自动：Markdown 转微信内联样式 → 运营信息卡/收益示意/真实截图画廊渲染 → 截图上传微信换内部 URL → 上传封面素材 → 建草稿 → 记录状态防重复。合规上会自动**去掉联盟返利直链**、文末加免责声明与「阅读原文」引导。
+
+### 建议的日常节奏
+
+每天 08:00 自动写稿构建后，你手动跑一次 `--latest 1`，然后打开公众号后台 → 草稿箱 → 检查标题封面排版 → 群发。全程约 2 分钟，既自动化了机械活，又守住人工审核关口。
+
+> GitHub Actions 里直接跑微信脚本会遇到 IP 白名单问题（runner 出口 IP 不固定），所以微信同步这一步设计为**本地/固定 IP 手动执行**，不接进每日 Actions。
 
 ## SEO 要点（已内置）
 

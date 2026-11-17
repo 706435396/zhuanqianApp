@@ -1,0 +1,12 @@
+{
+  "appid": "在这里填你的AppID，例如 wx1234567890abcdef",
+  "appsecret": "在这里填你的AppSecret",
+  "author": "赚钱App大全编辑部",
+  "source_url": "https://money.72tool.com",
+  "_说明": [
+    "1. AppID/AppSecret 在 微信公众平台 → 设置与开发 → 基本配置 获取",
+    "2. 也可不填本文件，改用环境变量 WECHAT_APPID / WECHAT_APPSECRET（推荐，避免密钥落盘）",
+    "3. 必须把运行脚本的公网 IP 加入公众平台 IP 白名单，否则报 40164",
+    "4. 本文件含密钥，已被 .gitignore 排除，不会推送到 GitHub"
+  ]
+}

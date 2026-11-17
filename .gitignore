@@ -1,6 +1,11 @@
 # WorkBuddy 内部数据（工作日志/记忆，不推送）
 .workbuddy/
 
+# 微信凭证与 token 缓存（含密钥，绝不推送）
+config/wechat.json
+.wechat_token.json
+_wechat_preview.html
+
 # Python 缓存
 __pycache__/
 *.py[cod]
