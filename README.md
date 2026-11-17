@@ -87,9 +87,12 @@ python scripts/generate_articles.py --dry-run   # 调试：只打印提示词
    - Build output directory：`site`
    - Root directory：`/`
    - Environment variables：`PYTHON_VERSION=3.11`（如需要）
+   - ⚠️ **Deploy command（部署命令）必须留空！** 这是最容易踩的坑：如果填了 `npx wrangler deploy`（Workers 命令），会报 `Missing entry-point to Worker script` 导致部署失败。Pages 连接 Git 后会自动部署，不需要也不应该填任何部署命令。
 4. 保存并部署。之后每次 `git push` 会自动重新构建。
 
 > 注意：CF Pages 默认构建镜像已含 Python。如构建报 Python 版本问题，可在 `wrangler.toml` 或仪表盘指定。
+>
+> 如果已经填错了 Deploy command：进入项目 → Settings → Builds & deployment → 编辑构建配置 → 清空 Deploy command → 保存并 Retry。仓库里的 `wrangler.toml` 已加 `[assets]` 作为兜底，但正确做法仍是留空。
 
 **方式 B：直接上传 site/（不需要构建环境）**
 

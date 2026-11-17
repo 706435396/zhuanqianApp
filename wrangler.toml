@@ -6,6 +6,12 @@ name = "money-apps-hub"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "site"
 
+# 关键修复：CF Pages 仪表盘若误把 Deploy command 填成 `npx wrangler deploy`
+# （Workers 命令），会报 "Missing entry-point"。加 [assets] 后该命令会把
+# site/ 作为静态资源目录部署，不再报错。Pages 自身仍会自动部署，二者不冲突。
+[assets]
+directory = "./site"
+
 # 说明：
 # - 纯静态站不需要 [vars] / [[kv_namespaces]] / D1 绑定。
 # - 如后续要加邮件订阅 API（CF Worker + KV），可在此追加：
