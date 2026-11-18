@@ -461,6 +461,11 @@ def layout(title, description, body, active="", canonical="/", og_emoji="📱"):
     aid = SITE_CFG.get("analytics_id", "")
     if aid:
         analytics = f"""<script defer src="https://umami.example.com/script.js" data-website-id="{esc(aid)}"></script>"""
+    # 站长验证 meta（百度/Google 等），配置在 site.json 的 verification 下，构建时注入全站 head
+    verify_meta = ""
+    for _engine, _code in SITE_CFG.get("verification", {}).items():
+        if _code:
+            verify_meta += f'<meta name="{esc(_engine)}-site-verification" content="{esc(_code)}">\n'
     return f"""<!DOCTYPE html>
 <html lang="{esc(SITE_CFG.get('lang','zh-CN'))}">
 <head>
@@ -469,7 +474,7 @@ def layout(title, description, body, active="", canonical="/", og_emoji="📱"):
 <title>{esc(title)} | {esc(SITE_CFG['name'])}</title>
 <meta name="description" content="{esc(description)}">
 <meta name="author" content="{esc(SITE_CFG.get('author',''))}">
-<link rel="canonical" href="{esc(SITE_CFG.get('domain','').rstrip('/') + canonical)}">
+{verify_meta}<link rel="canonical" href="{esc(SITE_CFG.get('domain','').rstrip('/') + canonical)}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
