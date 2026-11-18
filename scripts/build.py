@@ -29,6 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SITE = ROOT / "site"
+STATIC = ROOT / "static"  # 站长验证等需长期驻留根目录的静态文件
 
 # ----------------------------------------------------------------------------
 # 数据加载
@@ -1100,8 +1101,23 @@ def clean_output():
             shutil.rmtree(p)
 
 
+def copy_static_files():
+    """把 static/ 下的文件（如百度/Google 站长验证 HTML）复制到站点根目录。
+    这些文件必须长期存在于域名根目录，且不能被 clean_output 清理，故源码持久化于此。"""
+    if not STATIC.exists():
+        return
+    n = 0
+    for src in STATIC.iterdir():
+        if src.is_file():
+            shutil.copy2(src, SITE / src.name)
+            n += 1
+    if n:
+        print(f"   📄 已复制 {n} 个静态验证文件到站点根目录")
+
+
 def main():
     clean_output()
+    copy_static_files()
     build_home()
     build_posts()
     build_tools()
