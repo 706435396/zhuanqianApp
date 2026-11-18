@@ -461,11 +461,14 @@ def layout(title, description, body, active="", canonical="/", og_emoji="📱"):
     aid = SITE_CFG.get("analytics_id", "")
     if aid:
         analytics = f"""<script defer src="https://umami.example.com/script.js" data-website-id="{esc(aid)}"></script>"""
-    # 站长验证 meta（百度/Google 等），配置在 site.json 的 verification 下，构建时注入全站 head
+    # 站长验证 meta（百度/Google/360/搜狗/神马/头条等），配置在 site.json 的 verification 下，构建时注入全站 head。
+    # 默认 name 为 {engine}-site-verification；个别平台 name 不同，用 VERIFY_META_NAMES 覆盖。
+    VERIFY_META_NAMES = {"bytedance": "bytedance-verification-code"}
     verify_meta = ""
     for _engine, _code in SITE_CFG.get("verification", {}).items():
         if _code:
-            verify_meta += f'<meta name="{esc(_engine)}-site-verification" content="{esc(_code)}">\n'
+            _name = VERIFY_META_NAMES.get(_engine, f"{_engine}-site-verification")
+            verify_meta += f'<meta name="{esc(_name)}" content="{esc(_code)}">\n'
     return f"""<!DOCTYPE html>
 <html lang="{esc(SITE_CFG.get('lang','zh-CN'))}">
 <head>
