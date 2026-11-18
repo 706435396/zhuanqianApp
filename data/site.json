@@ -13,13 +13,31 @@
     "shenma": "478db184c396c066d7edf2933c8fe83a_1794989336",
     "bytedance": "la/M8KiN6SS4ehgMSMx/"
   },
+  "head_scripts": [
+    {
+      "name": "头条自动收录",
+      "code": "<script>\n(function(){\nvar el = document.createElement(\"script\");\nel.src = \"https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?4c55700135e677adfebd66a130e252776d7692c8a4bf95a46f42821c297ae23fbc434964556b7d7129e9b750ed197d397efd7b0c6c715c1701396e1af40cec962b8d7c8c6655c9b00211740aa8a98e2e\";\nel.id = \"ttzz\";\nvar s = document.getElementsByTagName(\"script\")[0];\ns.parentNode.insertBefore(el, s);\n})(window)\n</script>"
+    }
+  ],
   "icp": "",
   "analytics_id": "",
   "nav": [
-    { "label": "首页", "url": "/" },
-    { "label": "赚钱App", "url": "/tools/" },
-    { "label": "🏆排行榜", "url": "/ranking/" },
-    { "label": "关于我们", "url": "/about/" }
+    {
+      "label": "首页",
+      "url": "/"
+    },
+    {
+      "label": "赚钱App",
+      "url": "/tools/"
+    },
+    {
+      "label": "🏆排行榜",
+      "url": "/ranking/"
+    },
+    {
+      "label": "关于我们",
+      "url": "/about/"
+    }
   ],
   "hero": {
     "badge": "每日更新 · 只推能提现的赚钱App",
@@ -31,10 +49,22 @@
     "secondary_url": "/#latest"
   },
   "stats": [
-    { "value": "150+", "label": "赚钱App亲测" },
-    { "value": "80+", "label": "提现成功案例" },
-    { "value": "30万+", "label": "读者累计阅读" },
-    { "value": "每日", "label": "更新App测评" }
+    {
+      "value": "150+",
+      "label": "赚钱App亲测"
+    },
+    {
+      "value": "80+",
+      "label": "提现成功案例"
+    },
+    {
+      "value": "30万+",
+      "label": "读者累计阅读"
+    },
+    {
+      "value": "每日",
+      "label": "更新App测评"
+    }
   ],
   "newsletter": {
     "title": "每周一封，只发能提现的新App情报",

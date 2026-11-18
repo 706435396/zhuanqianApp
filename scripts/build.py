@@ -469,6 +469,13 @@ def layout(title, description, body, active="", canonical="/", og_emoji="📱"):
         if _code:
             _name = VERIFY_META_NAMES.get(_engine, f"{_engine}-site-verification")
             verify_meta += f'<meta name="{esc(_name)}" content="{esc(_code)}">\n'
+    # 搜索引擎自动收录 JS（头条/百度/360 主动推送等），配置在 site.json 的 head_scripts。
+    # 原始 HTML 片段直接注入，不做转义（脚本含引号与花括号）。注入点放在现有 script 之后，
+    # 保证脚本内 getElementsByTagName("script")[0] 能取到元素。
+    head_scripts = "\n".join(
+        _item["code"] for _item in SITE_CFG.get("head_scripts", [])
+        if isinstance(_item, dict) and _item.get("code")
+    )
     return f"""<!DOCTYPE html>
 <html lang="{esc(SITE_CFG.get('lang','zh-CN'))}">
 <head>
@@ -490,6 +497,7 @@ def layout(title, description, body, active="", canonical="/", og_emoji="📱"):
 <script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"WebSite","name":"{esc(SITE_CFG['name'])}","url":"{esc(SITE_CFG.get('domain',''))}"}}
 </script>
+{head_scripts}
 </head>
 <body>
 {header_html(active)}
