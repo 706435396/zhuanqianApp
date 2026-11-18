@@ -1,0 +1,17 @@
+{
+  "pushed": [
+    "https://money.72tool.com/"
+  ],
+  "remain": 7,
+  "date": "2026-11-18",
+  "history": [
+    {
+      "time": "2026-11-18 15:00:00",
+      "requested": 1,
+      "success": 1,
+      "remain": 8,
+      "not_same_site": 0,
+      "not_valid": 0
+    }
+  ]
+}

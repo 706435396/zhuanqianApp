@@ -50,30 +50,47 @@ jobs:
       - name: 构建静态站点
         run: python scripts/build.py
 
+      - name: 检测是否有新内容
+        id: detect
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      # 推送须在提交前：脚本会更新 data/baidu_pushed.json（已推 URL/额度），
+      # 随本次变更一并提交，下次 runner 全新检出才能正确去重、不重复消耗额度。
+      - name: 百度 API 主动推送（新文章秒级通知百度）
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
+        run: python scripts/baidu_push.py --limit 10
+
       - name: 提交变更
+        if: steps.detect.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          if git diff --staged --quiet; then
-            echo "无变更，跳过提交"
-            echo "changed=false" >> $GITHUB_ENV
-          else
-            git commit -m "auto: 每日更新 $(date +'%Y-%m-%d')"
-            git push
-            echo "changed=true" >> $GITHUB_ENV
-          fi
+          git commit -m "auto: 每日更新 $(date +'%Y-%m-%d')"
+          git push
 
       # CF Pages 若通过 GitHub 集成部署，上方 push 会自动触发构建。
       # 若用独立部署钩子，取消下方注释并配置 secrets.CF_DEPLOY_HOOK。
       # - name: 触发 Cloudflare Pages 部署
-      #   if: env.changed == 'true'
+      #   if: steps.detect.outputs.changed == 'true'
       #   run: curl -sS -X POST "${{ secrets.CF_DEPLOY_HOOK }}"
 
       - name: 推送 sitemap 给搜索引擎
-        if: env.changed == 'true'
+        if: steps.detect.outputs.changed == 'true'
         run: |
           SITE="${{ vars.SITE_DOMAIN }}"
+          if [ -z "$SITE" ]; then
+            # 兜底：从 site.json 读取域名，避免忘配 vars 时不 ping
+            SITE=$(python -c "import json;print(json.load(open('data/site.json'))['domain'].replace('https://','').replace('http://','').rstrip('/'))" 2>/dev/null || true)
+          fi
           if [ -z "$SITE" ]; then
             echo "未配置 SITE_DOMAIN，跳过 ping"
             exit 0
