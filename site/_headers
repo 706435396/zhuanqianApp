@@ -14,3 +14,10 @@
 /robots.txt
   Content-Type: text/plain
   Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
+
+# 站长验证文件必须实时可读，禁止边缘缓存（否则部署前的 404 会被缓存，导致验证失败）。
+/baidu_verify_codeva-Aehy6TlNkz.html
+  Cache-Control: no-store, no-cache, must-revalidate
+
+/0e0a5f795d2a1b8dabb148ce206896f3.txt
+  Cache-Control: no-store, no-cache, must-revalidate
