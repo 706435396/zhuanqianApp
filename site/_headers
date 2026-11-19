@@ -4,6 +4,11 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Cache-Control: public, max-age=0, s-maxage=3600, stale-while-revalidate=86400
 
+# 首页必须实时可读：神马/百度等站长验证的 meta 标签在首页，
+# 若命中部署前的旧缓存，爬虫会读到过期验证码导致验证失败。
+/
+  Cache-Control: no-store, no-cache, must-revalidate
+
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
