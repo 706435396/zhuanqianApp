@@ -68,6 +68,12 @@ jobs:
           BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
         run: python scripts/baidu_push.py --limit 10
 
+      - name: IndexNow 推送（新文章同步通知 Bing/Yandex 等）
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: python scripts/indexnow_push.py --limit 10
+
       - name: 提交变更
         if: steps.detect.outputs.changed == 'true'
         run: |
