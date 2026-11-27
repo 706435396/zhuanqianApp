@@ -74,6 +74,15 @@ jobs:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: python scripts/indexnow_push.py --limit 10
 
+      # Bing Webmaster URL Submission API（与 IndexNow 并行的直连通道）。
+      # BING_API_KEY 从 Settings → API Access 获取，一个账号只有一个；
+      # 未配置 secret 时脚本优雅跳过，不阻断流程。
+      - name: Bing URL Submission API 推送
+        if: steps.detect.outputs.changed == 'true'
+        env:
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+        run: python scripts/bing_push.py --limit 10
+
       - name: 提交变更
         if: steps.detect.outputs.changed == 'true'
         run: |
